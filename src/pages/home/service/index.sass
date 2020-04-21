@@ -1,6 +1,36 @@
 .service
   position: relative
 
+.service__bg
+  position: absolute
+  top: 0
+  right: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+  background-image: url("./bg.png")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  background-position-x: 370px
+  background-position-y: 130px
+
+  +max-w(1700)
+    background-size: cover
+    background-position-x: 250px
+    background-position-y: -50px
+
+.service__ellipse
+  position: absolute
+  top: 308px
+  left: 152px
+  width: 14px
+  height: 14px
+
+  img
+    width: 100%
+    height: 100%
+
 .service__container
   padding: 0 376px 0 375px
 
@@ -68,6 +98,9 @@
 
 .service__card_high-top
   margin: 170px 0 0 0
+
+.service__card_low-bottom
+  margin: 0 0 203px 0
 
 .service__card-img
   width: 114px
